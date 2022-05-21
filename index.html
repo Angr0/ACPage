@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Assassin's Creed</title>
+
+</head>
+
+<body>
+
+    <div id="nav">
+        <ul>
+
+            <li><a href="strona.html"><img src='logo.png' onmouseover="this.src='logo-ani.gif';" onmouseout="this.src='logo.png';" height=260px></a> </li>
+            <li class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">&nbsp &nbsp &nbsp &nbsp GŁÓWNA &nbsp &nbsp &#9661</li></button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#flag">Assassin's Creed: Black Flag</a>
+                <a href="#origins">Assassin's Creed: Origins</a>
+                <a href="#odyssey">Assassin's Creed: Odyssey</a>
+            </div>
+            <li><a href="sklep.html">SKLEP</a></li>
+            <li><a href="gdzety.html">GADŻETY</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+            <br><br><br><br><br><br><br>
+              <div id="foot">
+            <li>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><img src="youtube.png" width=45px></a>&nbsp;&nbsp;
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><img src="twitt.png" width=45px></a>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><img src="instagram.png" width=45px></a>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><img src="facebook.png" width=45px></a>
+</li>
+       </div>
+        </ul>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle('show');
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <div id="zawartosc">
+
+        <img class="slides" src="1.png" style="width: 1700px; height: 700px;">
+        <img class="slides" src="2.png" style="width: 1700px; height: 700px;">
+        <img class="slides" src="3.png" style="width: 1700px; height: 700px;">
+        <img class="slides" src="4.png" style="width: 1700px; height: 700px;">
+        <img class="slides" src="5.png" style="width: 1700px; height: 700px;">
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
+            }
+
+        </script>
+        <div id="nag">
+<h1>Poznaj najlepsze gry!</h1>
+ </div>
+    
+    
+    <div id="flag">
+    <div id="opis">
+    <div id="tresc">
+    <h1>Assassin's Creed: Black Flag</h1>
+        Wiodącą postacią kampanii głównej w <a href="https://www.gry-online.pl/gry/assassins-creed-iv-black-flag/z33583"><tytul>Assassin's Creed: Black Flag</tytul></a>
+    jest Edward Kenway (dziadek Connora Kenway'a z Assassin's Creed III), pochodzący z Walii XVIII-wieczny pirat, który podając się za członka tytułowego zakonu dowiaduje się o istnieniu legendarnego Obserwatorium, pozwalającego przyglądać się poczynaniom każdej osoby na ziemi. Pałający chęcią zysku korsarz postanawia zagarnąć sekrety Obserwatorium dla siebie, wplątując się w odwieczny konflikt między zakonami Templariuszy i Asasynów. Miejscem akcji są natomiast Karaiby rok po zakończeniu hiszpańskiej wojny sukcesyjnej (1701-1714), a więc w tzw. złotej erze piractwa. Podobnie jak we wcześniejszych grach z cyklu twórcom udało się wpleść w fabułę wiele autentycznych wydarzeń i postaci. Gracze mogą więc spotkać na swojej drodze m.in. Edwarda Teacha (Czarnobrody), Benjamina Hornigolda, Calico Jacka Rackhama, Annę Bonny oraz Charlesa Vane'a.
+        </div>
+    <div id="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OwVe4ZNeQZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="origins">
+<div id="opis">
+    <div id="trailer" id="origins">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cUuKIpCM2o0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="tresc">
+    <h1>Assassin's Creed: Origins</h1>
+        Akcja <a href="https://www.gry-online.pl/gry/assassins-creed-origins/zf45db" target="_blank">
+                        <tytul>Assassin's Creed: Origins</tytul></a>
+                        toczy się w starożytnym Egipcie, gdzie swoje początki miało bractwo tytułowych Asasynów. Za powstaniem owego ugrupowania stała intryga, którą gracze poznają w toku przygody, wcielając się w Bayeka z Siwy. Bohater był jednym z nubijskich wojowników, którzy przez wieki służyli faraonom jako agenci i elitarni stróże prawa. On i jemu podobni żołnierze stali się jednak reliktem przeszłości, kiedy do głosu zaczęły dochodzić greckie wpływy wprowadzane przez dynastię Ptolemeuszy –
+                    w obliczu zmian protagoniście nie pozostało nic innego, jak dostosować się do nowych realiów.
+        </div>
+     </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="odyssey">
+    <div id="opis" id="odyssey">
+    <div id="tresc">
+    <h1>Assassin's Creed: Odyssey</h1>
+        Akcja <a href="https://www.gry-online.pl/gry/assassins-creed-odyssey/z1537b" target="_blank">
+                        <tytul>Assassin's Creed: Odyssey</tytul></a>
+                    rozpoczyna się w 431 roku przed naszą erą, u progu konfliktu pomiędzy Spartą i Atenami, w podręcznikach historii utrwalonego jako wojna peloponeska. Przed rozpoczęciem zabawy wybieramy jedną z dwóch postaci – Aleksiosa lub Kassandrę, będących wnukami słynnego spartańskiego króla Leonidasa. Zostali oni jednak w młodości wyklęci przez swoją ojczyznę i wygnani; poznajemy ich, gdy już jako dorośli ludzie zarabiają na życie jako najemnicy. Początkiem opowieści – tytułowej odysei – jest moment, kiedy bohater(ka) podejmuje się niebezpiecznego zlecenia, które nieoczekiwanie otworzy mu/jej drogę do odzyskania rodziny.
+        </div>
+    <div id="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s_SJZSAtLBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> 
+    </div>
+</div>
+
+
+    </div>
+</body>
+
+</html>
