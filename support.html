@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Assassin's Creed</title>
+
+</head>
+
+<body>
+
+    <div id="nav">
+        <ul>
+
+            <li><a href="strona.html"><img src='logo.png' onmouseover="this.src='logo-ani.gif';" onmouseout="this.src='logo.png';" height=260px></a> </li>
+            <li class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">&nbsp &nbsp &nbsp &nbsp GŁÓWNA &nbsp &nbsp &#9661</li></button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#flag">Assassin's Creed: Black Flag</a>
+                <a href="#origins">Assassin's Creed: Origins</a>
+                <a href="#odyssey">Assassin's Creed: Odyssey</a>
+            </div>
+            <li><a href="sklep.html">SKLEP</a></li>
+            <li><a href="gdzety.html">GADŻETY</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            
+            <div id="foot">
+            <li>
+            <tr>
+            <a>
+            <td><img src="youtube.png" width=50px></td>
+            <td><img src="twitt.png" width=50px></td>
+            </a>
+            </tr>
+            <tr>
+            <a>
+            <td><img src="instagram.png" width=50px></td>
+            <td><img src="facebook.png" width=50px></td>
+            </a>
+    </tr>
+</li>
+       </div>
+        </ul>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle('show');
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <div id="zaw2">
+
+    
+    <h3 style="text-align: center; font-size: 40px;">Masz problemy techniczne? Napisz do SUPPORTU!</h3>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+<div class="form">
+<form>
+<fieldset>
+<legend><span class="number">1</span> Dane osobowe</legend>
+<input type="text" name="field1" placeholder="Imię">
+<input type="text" name="field1" placeholder="Nazwisko">
+<input type="email" name="field2" placeholder="E-mail">
+<label for="job">Rodzaj problemu:</label>
+<select id="job" name="field4">
+<optgroup>
+  <option value="fishkeeping">Sprzętowy</option>
+  <option value="reading">Z programem</option>
+</optgroup>
+</select>      
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Informacje o problemie</legend>
+<label for="job">Nazwa gry:</label>
+<select id="job" name="field4">
+<optgroup>
+  <option value="fishkeeping">Assassin's Creed: Black Flag</option>
+  <option value="reading">Assassin's Creed: Origins</option>
+  <option value="reading">Assassin's Creed: Odyssey</option>
+</optgroup>
+</select>
+<textarea name="field3" placeholder="Tu wpisz dodatkowe informacje"></textarea>
+</fieldset>
+<input type="submit" value="Wyślij" />
+</form>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    </div>
+</body>
+
+</html>
